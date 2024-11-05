@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Manutenção - Universidade</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Registro de Manutenção Predial e Informática</h1>
+    <p>Preencha o formulário abaixo para registrar a manutenção.</p>
+  </header>
+  
+  <main>
+    <form id="maintenance-form" enctype="multipart/form-data">
+      <label for="type">Tipo de Manutenção:</label>
+      <select id="type" name="type" required>
+        <option value="predial">Predial</option>
+        <option value="informatica">Informática</option>
+      </select>
+      
+      <label for="description">Descrição da Manutenção:</label>
+      <textarea id="description" name="description" rows="4" required></textarea>
+
+      <label for="sector">Setor Responsável:</label>
+      <input type="text" id="sector" name="sector" required>
+
+      <label for="image">Carregar Imagem (opcional):</label>
+      <input type="file" id="image" name="image" accept="image/*">
+      <div id="image-preview"></div>
+
+      <button type="submit">Registrar Manutenção</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Universidade XYZ</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
